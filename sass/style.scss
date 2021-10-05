@@ -1,0 +1,457 @@
+@import "partial/variable";
+@import "partial/color";
+@import "partial/fixed";
+// @import "../css/fonts.css";
+
+/* Header Section */
+.navbar {
+          &.bg-light {
+                    background-color: $white !important;
+          }
+}
+.navbar-light {
+          .navbar-brand {
+                    color: $green !important;
+          }
+          .navbar-nav .nav-link {
+                    &.active {
+                              color: $green !important;
+                    }
+                    &:hover {
+                              color: $green !important;
+                    }
+          }
+          .navbar-nav .show > .nav-link {
+                    color: $green !important;
+          }
+}
+.gets {
+          a {
+                    font-weight: normal;
+                    font-size: $font-size - 2 !important;
+                    &:hover {
+                              background-color: #3ac162 !important;
+                              border: 1px solid transparent;
+                    }
+          }
+          .btn-success {
+                    background-color: $green !important;
+                    border-color: $green;
+                    font-size: $font-size;
+          }
+          .py-2 {
+                    padding-top: 0.4rem !important;
+                    padding-bottom: 0.4rem !important;
+          }
+}
+
+/* End Header Section */
+
+/*  Banner Section */
+#banner_section {
+          width: 100%;
+          height: 60vh;
+          background: url("../images/hero-bg.jpg") top center;
+          background-attachment: fixed;
+          background-size: cover;
+          position: relative;
+          &:before {
+                    content: "";
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: rgba(0, 0, 0, 0.4);
+                    position: absolute;
+          }
+          .banner_title {
+                    z-index: 3;
+                    padding-top: 45px;
+                    //background-color: red;
+                    h1 {
+                              color: $white;
+                              font-weight: 700;
+                              font-family: "Poppins", sans-serif;
+                    }
+                    p {
+                              font-weight: 500;
+                              font-family: "Raleway", sans-serif;
+                              font-size: $font-size + 6;
+                              color: $gainsboro;
+                    }
+                    a {
+                              color: $white;
+                              font-size: $font-size;
+                              &:hover {
+                                        background-color: $green;
+                                        border: 2px solid transparent !important;
+                              }
+                    }
+                    .py-2 {
+                              padding-top: 0.4rem !important;
+                              padding-bottom: 0.4rem !important;
+                    }
+          }
+}
+/*  End Banner Section */
+
+/*  About Section */
+#about_section {
+          @extend %section-padding;
+          .about_content {
+                    h3 {
+                              font-size: $font-size + 6;
+                              font-weight: 600;
+                    }
+                    ul {
+                              li {
+                                        margin-bottom: 8px;
+                                        i {
+                                                  color: $green;
+                                                  font-size: $font-size + 3;
+                                                  padding-right: 4px;
+                                        }
+                              }
+                    }
+          }
+}
+/*  End About Section */
+
+/* Counter Section */
+#counter_section {
+          //   @extend %section-padding;
+          background-color: $gainsboro;
+          .counter_content {
+                    span {
+                              color: $green;
+                    }
+                    p {
+                              font-size: $font-size - 2;
+                              font-weight: 600;
+                              color: $deep-black;
+                    }
+          }
+}
+/* End Counter Section */
+
+/* Choose Section */
+#choose_section {
+          @extend %section-padding;
+          .choose_content_left {
+                    background-color: $green;
+                    padding: 25px 25px;
+                    h2 {
+                              color: $white;
+                              font-weight: 600;
+                              margin-bottom: 20px;
+                    }
+                    p {
+                              color: $white;
+                              font-size: $font-size;
+                    }
+                    .btn-success {
+                              background-color: #7ef482;
+                              border: 1px solid transparent;
+                              &:hover {
+                                        background-color: $white;
+                                        border: 1px solid transparent;
+                                        color: $green;
+                              }
+                    }
+                    a {
+                              font-size: $font-size - 1;
+                    }
+                    .py-2 {
+                              padding-top: 0.3rem !important;
+                              padding-bottom: 0.3rem !important;
+                    }
+          }
+          //   box
+          .box {
+                    i {
+                              color: $green;
+                              font-size: $font-size + 10;
+                              background-color: #ecf9f0;
+                              padding: 15px 15px;
+                              border-radius: 100%;
+                              -webkit-border-radius: 100%;
+                              -moz-border-radius: 100%;
+                              -ms-border-radius: 100%;
+                              -o-border-radius: 100%;
+                              margin-bottom: 20px;
+                    }
+                    h4 {
+                              color: $deep-black;
+                              font-size: $font-size + 3;
+                              font-weight: 700;
+                              margin-bottom: 20px;
+                    }
+                    p {
+                              font-size: $font-size - 2;
+                    }
+          }
+}
+
+/* End Choose Section */
+
+/* Feature Section */
+#feature_section {
+          @extend %section-padding;
+          .feature_box {
+                    margin-bottom: 15px;
+                    transition: 0.4s;
+                    -webkit-transition: 0.4s;
+                    -moz-transition: 0.4s;
+                    -ms-transition: 0.4s;
+                    -o-transition: 0.4s;
+                    i {
+                              font-size: $font-size + 8;
+                              padding-right: 4px;
+                    }
+                    span {
+                              font-weight: 600;
+                              color: $deep-black;
+                              transition: 0.4s;
+                              -webkit-transition: 0.4s;
+                              -moz-transition: 0.4s;
+                              -ms-transition: 0.4s;
+                              -o-transition: 0.4s;
+                    }
+                    &:hover {
+                              border: 1px solid $green !important;
+                              span {
+                                        color: $green !important;
+                              }
+                    }
+          }
+}
+/* End Feature Section */
+
+/* Course Section */
+#course_section {
+          @extend %section-padding;
+          .course_title {
+                    span {
+                              font-weight: bold;
+                              font-family: "Poppins", sans-serif;
+                              position: relative;
+                              &:after {
+                                        content: "";
+                                        left: 75px;
+                                        top: 50%;
+                                        width: 100px;
+                                        height: 1px;
+                                        position: absolute;
+                                        background-color: $green;
+                              }
+                    }
+                    h2 {
+                              font-weight: 700;
+                              font-size: $font-size + 14;
+                              font-family: "Poppins", sans-serif;
+                    }
+          }
+          .card {
+                    .card-body {
+                              .course_name {
+                                        p {
+                                                  background-color: $green;
+                                                  padding: 3px 10px;
+                                                  color: $white;
+                                                  font-family: "Raleway",
+                                                            sans-serif;
+                                                  font-size: $font-size - 2;
+                                                  font-weight: 500;
+                                        }
+                                        span {
+                                                  color: $deep-black;
+                                                  font-size: $font-size;
+                                                  font-weight: 700;
+                                                  font-family: "Open Sans",
+                                                            sans-serif;
+                                        }
+                              }
+                              //   card title
+                              .card-title {
+                                        font-family: "Raleway", sans-serif;
+                                        font-weight: 700;
+                                        font-size: $font-size + 3;
+                              }
+                              //   card text
+                              .card-text {
+                                        font-size: $font-size - 2;
+                              }
+                              //   course trainer
+                              .course_trainer {
+                                        .trainer_logo_name {
+                                                  .w-25 {
+                                                            width: 30% !important;
+                                                  }
+                                                  span {
+                                                            font-weight: 600;
+                                                            font-size: $font-size -1;
+                                                            font-family: "Raleway",
+                                                                      sans-serif;
+                                                  }
+                                        }
+                              }
+                    }
+          }
+}
+/* End Course Section */
+
+/* Trainer Section */
+#trainer_section {
+          @extend %section-padding;
+          .trainer_title {
+                    span {
+                              font-weight: bold;
+                              font-family: "Poppins", sans-serif;
+                              position: relative;
+                              &:after {
+                                        content: "";
+                                        left: 75px;
+                                        top: 50%;
+                                        width: 100px;
+                                        height: 1px;
+                                        position: absolute;
+                                        background-color: $green;
+                              }
+                    }
+                    h2 {
+                              font-weight: 700;
+                              font-size: $font-size + 14;
+                              font-family: "Poppins", sans-serif;
+                    }
+          }
+          //   card
+          .card {
+                    .card-body {
+                              //   card title
+                              .card-title {
+                                        font-family: "Raleway", sans-serif;
+                                        font-weight: 700;
+                                        font-size: $font-size + 3;
+                              }
+                              .card-subtitle {
+                                        font-family: "Raleway", sans-serif;
+                                        font-size: $font-size - 3;
+                                        font-style: italic;
+                                        margin-bottom: 10px;
+                              }
+                              //   card text
+                              .card-text {
+                                        font-size: $font-size - 2;
+                                        font-style: italic;
+                              }
+                              .social_link {
+                                        ul {
+                                                  li {
+                                                            a {
+                                                                      color: #dadada;
+                                                                      transition: 0.4s;
+                                                                      -webkit-transition: 0.4s;
+                                                                      -moz-transition: 0.4s;
+                                                                      -ms-transition: 0.4s;
+                                                                      -o-transition: 0.4s;
+                                                                      &:hover {
+                                                                                color: $green;
+                                                                      }
+                                                            }
+                                                  }
+                                        }
+                              }
+                    }
+          }
+}
+/* End TRainer Section */
+
+/* footer_category_section*/
+#footer_category_section {
+          background-color: $gainsboro;
+          @extend %section-padding;
+          //   mentor left
+          .mentor_left {
+                    h3 {
+                              font-size: $font-size + 8;
+                    }
+                    p,
+                    span {
+                              font-size: $font-size - 2;
+                              font-family: "Raleway", sans-serif;
+                    }
+                    span {
+                              display: block;
+                    }
+          }
+          //   useful links
+          .useful_link,
+          .service,
+          .newsletter {
+                    h3 {
+                              font-size: $font-size + 1;
+                              font-weight: 700;
+                    }
+                    ul {
+                              li {
+                                        padding: 8px 0;
+                                        display: flex;
+                                        align-items: center;
+                                        i {
+                                                  color: $green;
+                                        }
+                                        a {
+                                                  font-size: $font-size - 2;
+                                                  color: #6c757d !important;
+                                                  font-weight: normal;
+                                                  transition: 0.4s;
+                                                  -webkit-transition: 0.4s;
+                                                  -moz-transition: 0.4s;
+                                                  -ms-transition: 0.4s;
+                                                  -o-transition: 0.4s;
+
+                                                  &:hover {
+                                                            color: $green !important;
+                                                  }
+                                        }
+                              }
+                    }
+          }
+          //   newsletter
+          .newsletter {
+                    position: relative;
+
+                    p {
+                              font-size: $font-size - 2;
+                    }
+                    input[type="text"] {
+                              width: 100%;
+                    }
+                    input[type="text"]:focus {
+                              outline: none;
+                    }
+                    input[type="text"],
+                    input[type="submit"] {
+                              padding: 6px 10px;
+                              border: none;
+                    }
+                    input[type="submit"] {
+                              position: absolute;
+                              width: 30%;
+                              right: 0;
+                              background-color: $green;
+                              color: $white;
+                              font-size: $font-size;
+                              transition: 0.4s;
+                              -webkit-transition: 0.4s;
+                              -moz-transition: 0.4s;
+                              -ms-transition: 0.4s;
+                              -o-transition: 0.4s;
+
+                              &:hover {
+                                        background-color: #3ac162;
+                              }
+                    }
+          }
+}
+/* End footer_category_section*/

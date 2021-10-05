@@ -1,0 +1,430 @@
+#footer_category_section, #trainer_section, #course_section, #feature_section, #choose_section, #about_section {
+  padding: 50px 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Raleway", sans-serif;
+  color: #37423b;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Header Section */
+.navbar.bg-light {
+  background-color: #ffffff !important;
+}
+
+.navbar-light .navbar-brand {
+  color: #5fcf80 !important;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: #5fcf80 !important;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #5fcf80 !important;
+}
+.navbar-light .navbar-nav .show > .nav-link {
+  color: #5fcf80 !important;
+}
+
+.gets a {
+  font-weight: normal;
+  font-size: 12px !important;
+}
+.gets a:hover {
+  background-color: #3ac162 !important;
+  border: 1px solid transparent;
+}
+.gets .btn-success {
+  background-color: #5fcf80 !important;
+  border-color: #5fcf80;
+  font-size: 14px;
+}
+.gets .py-2 {
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.4rem !important;
+}
+
+/* End Header Section */
+/*  Banner Section */
+#banner_section {
+  width: 100%;
+  height: 60vh;
+  background: url("../images/hero-bg.jpg") top center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+#banner_section:before {
+  content: "";
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+}
+#banner_section .banner_title {
+  z-index: 3;
+  padding-top: 45px;
+}
+#banner_section .banner_title h1 {
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+#banner_section .banner_title p {
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  color: #f6f7f6;
+}
+#banner_section .banner_title a {
+  color: #ffffff;
+  font-size: 14px;
+}
+#banner_section .banner_title a:hover {
+  background-color: #5fcf80;
+  border: 2px solid transparent !important;
+}
+#banner_section .banner_title .py-2 {
+  padding-top: 0.4rem !important;
+  padding-bottom: 0.4rem !important;
+}
+
+/*  End Banner Section */
+/*  About Section */
+#about_section .about_content h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+#about_section .about_content ul li {
+  margin-bottom: 8px;
+}
+#about_section .about_content ul li i {
+  color: #5fcf80;
+  font-size: 17px;
+  padding-right: 4px;
+}
+
+/*  End About Section */
+/* Counter Section */
+#counter_section {
+  background-color: #f6f7f6;
+}
+#counter_section .counter_content span {
+  color: #5fcf80;
+}
+#counter_section .counter_content p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #37423b;
+}
+
+/* End Counter Section */
+/* Choose Section */
+#choose_section .choose_content_left {
+  background-color: #5fcf80;
+  padding: 25px 25px;
+}
+#choose_section .choose_content_left h2 {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+#choose_section .choose_content_left p {
+  color: #ffffff;
+  font-size: 14px;
+}
+#choose_section .choose_content_left .btn-success {
+  background-color: #7ef482;
+  border: 1px solid transparent;
+}
+#choose_section .choose_content_left .btn-success:hover {
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  color: #5fcf80;
+}
+#choose_section .choose_content_left a {
+  font-size: 13px;
+}
+#choose_section .choose_content_left .py-2 {
+  padding-top: 0.3rem !important;
+  padding-bottom: 0.3rem !important;
+}
+#choose_section .box i {
+  color: #5fcf80;
+  font-size: 24px;
+  background-color: #ecf9f0;
+  padding: 15px 15px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  margin-bottom: 20px;
+}
+#choose_section .box h4 {
+  color: #37423b;
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#choose_section .box p {
+  font-size: 12px;
+}
+
+/* End Choose Section */
+/* Feature Section */
+#feature_section .feature_box {
+  margin-bottom: 15px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#feature_section .feature_box i {
+  font-size: 22px;
+  padding-right: 4px;
+}
+#feature_section .feature_box span {
+  font-weight: 600;
+  color: #37423b;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#feature_section .feature_box:hover {
+  border: 1px solid #5fcf80 !important;
+}
+#feature_section .feature_box:hover span {
+  color: #5fcf80 !important;
+}
+
+/* End Feature Section */
+/* Course Section */
+#course_section .course_title span {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+#course_section .course_title span:after {
+  content: "";
+  left: 75px;
+  top: 50%;
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  background-color: #5fcf80;
+}
+#course_section .course_title h2 {
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+}
+#course_section .card .card-body .course_name p {
+  background-color: #5fcf80;
+  padding: 3px 10px;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+#course_section .card .card-body .course_name span {
+  color: #37423b;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+}
+#course_section .card .card-body .card-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+#course_section .card .card-body .card-text {
+  font-size: 12px;
+}
+#course_section .card .card-body .course_trainer .trainer_logo_name .w-25 {
+  width: 30% !important;
+}
+#course_section .card .card-body .course_trainer .trainer_logo_name span {
+  font-weight: 600;
+  font-size: 14px -1;
+  font-family: "Raleway", sans-serif;
+}
+
+/* End Course Section */
+/* Trainer Section */
+#trainer_section .trainer_title span {
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+#trainer_section .trainer_title span:after {
+  content: "";
+  left: 75px;
+  top: 50%;
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  background-color: #5fcf80;
+}
+#trainer_section .trainer_title h2 {
+  font-weight: 700;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+}
+#trainer_section .card .card-body .card-title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+#trainer_section .card .card-body .card-subtitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+#trainer_section .card .card-body .card-text {
+  font-size: 12px;
+  font-style: italic;
+}
+#trainer_section .card .card-body .social_link ul li a {
+  color: #dadada;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#trainer_section .card .card-body .social_link ul li a:hover {
+  color: #5fcf80;
+}
+
+/* End TRainer Section */
+/* footer_category_section*/
+#footer_category_section {
+  background-color: #f6f7f6;
+}
+#footer_category_section .mentor_left h3 {
+  font-size: 22px;
+}
+#footer_category_section .mentor_left p,
+#footer_category_section .mentor_left span {
+  font-size: 12px;
+  font-family: "Raleway", sans-serif;
+}
+#footer_category_section .mentor_left span {
+  display: block;
+}
+#footer_category_section .useful_link h3,
+#footer_category_section .service h3,
+#footer_category_section .newsletter h3 {
+  font-size: 15px;
+  font-weight: 700;
+}
+#footer_category_section .useful_link ul li,
+#footer_category_section .service ul li,
+#footer_category_section .newsletter ul li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+#footer_category_section .useful_link ul li i,
+#footer_category_section .service ul li i,
+#footer_category_section .newsletter ul li i {
+  color: #5fcf80;
+}
+#footer_category_section .useful_link ul li a,
+#footer_category_section .service ul li a,
+#footer_category_section .newsletter ul li a {
+  font-size: 12px;
+  color: #6c757d !important;
+  font-weight: normal;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#footer_category_section .useful_link ul li a:hover,
+#footer_category_section .service ul li a:hover,
+#footer_category_section .newsletter ul li a:hover {
+  color: #5fcf80 !important;
+}
+#footer_category_section .newsletter {
+  position: relative;
+}
+#footer_category_section .newsletter p {
+  font-size: 12px;
+}
+#footer_category_section .newsletter input[type=text] {
+  width: 100%;
+}
+#footer_category_section .newsletter input[type=text]:focus {
+  outline: none;
+}
+#footer_category_section .newsletter input[type=text],
+#footer_category_section .newsletter input[type=submit] {
+  padding: 6px 10px;
+  border: none;
+}
+#footer_category_section .newsletter input[type=submit] {
+  position: absolute;
+  width: 30%;
+  right: 0;
+  background-color: #5fcf80;
+  color: #ffffff;
+  font-size: 14px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#footer_category_section .newsletter input[type=submit]:hover {
+  background-color: #3ac162;
+}
+
+/* End footer_category_section*/
+
+/*# sourceMappingURL=style.css.map */
