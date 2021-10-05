@@ -14,6 +14,8 @@
                     color: $green !important;
           }
           .navbar-nav .nav-link {
+                    font-size: $font-size + 2;
+                    font-weight: 500;
                     &.active {
                               color: $green !important;
                     }
@@ -28,7 +30,7 @@
 .gets {
           a {
                     font-weight: normal;
-                    font-size: $font-size - 2 !important;
+                    font-size: $font-size !important;
                     &:hover {
                               background-color: #3ac162 !important;
                               border: 1px solid transparent;
@@ -40,8 +42,8 @@
                     font-size: $font-size;
           }
           .py-2 {
-                    padding-top: 0.4rem !important;
-                    padding-bottom: 0.4rem !important;
+                    padding-top: 0.5rem !important;
+                    padding-bottom: 0.5rem !important;
           }
 }
 
@@ -100,15 +102,21 @@
           @extend %section-padding;
           .about_content {
                     h3 {
-                              font-size: $font-size + 6;
+                              font-size: $font-size + 12;
                               font-weight: 600;
+                    }
+                    p {
+                              font-family: "Open Sans", sans-serif;
+                              font-size: $font-size + 2;
                     }
                     ul {
                               li {
                                         margin-bottom: 8px;
+                                        font-family: "Open Sans", sans-serif;
+                                        font-size: $font-size + 2;
                                         i {
                                                   color: $green;
-                                                  font-size: $font-size + 3;
+                                                  font-size: $font-size + 6;
                                                   padding-right: 4px;
                                         }
                               }
@@ -125,8 +133,11 @@
                     span {
                               color: $green;
                     }
+                    .fs-1 {
+                              font-size: 48px !important;
+                    }
                     p {
-                              font-size: $font-size - 2;
+                              font-size: $font-size + 1;
                               font-weight: 600;
                               color: $deep-black;
                     }
@@ -144,10 +155,11 @@
                               color: $white;
                               font-weight: 600;
                               margin-bottom: 20px;
+                              font-size: $font-size + 20;
                     }
                     p {
                               color: $white;
-                              font-size: $font-size;
+                              font-size: $font-size + 2;
                     }
                     .btn-success {
                               background-color: #7ef482;
@@ -159,7 +171,7 @@
                               }
                     }
                     a {
-                              font-size: $font-size - 1;
+                              font-size: $font-size + 2;
                     }
                     .py-2 {
                               padding-top: 0.3rem !important;
@@ -170,9 +182,9 @@
           .box {
                     i {
                               color: $green;
-                              font-size: $font-size + 10;
+                              font-size: $font-size + 18;
                               background-color: #ecf9f0;
-                              padding: 15px 15px;
+                              padding: 18px 18px;
                               border-radius: 100%;
                               -webkit-border-radius: 100%;
                               -moz-border-radius: 100%;
@@ -182,12 +194,12 @@
                     }
                     h4 {
                               color: $deep-black;
-                              font-size: $font-size + 3;
+                              font-size: $font-size + 6;
                               font-weight: 700;
                               margin-bottom: 20px;
                     }
                     p {
-                              font-size: $font-size - 2;
+                              font-size: $font-size + 1;
                     }
           }
 }
@@ -205,8 +217,8 @@
                     -ms-transition: 0.4s;
                     -o-transition: 0.4s;
                     i {
-                              font-size: $font-size + 8;
-                              padding-right: 4px;
+                              font-size: $font-size + 18;
+                              padding-right: 5px;
                     }
                     span {
                               font-weight: 600;
@@ -216,6 +228,7 @@
                               -moz-transition: 0.4s;
                               -ms-transition: 0.4s;
                               -o-transition: 0.4s;
+                              font-size: $font-size + 2;
                     }
                     &:hover {
                               border: 1px solid $green !important;
@@ -235,6 +248,7 @@
                               font-weight: bold;
                               font-family: "Poppins", sans-serif;
                               position: relative;
+
                               &:after {
                                         content: "";
                                         left: 75px;
@@ -247,7 +261,7 @@
                     }
                     h2 {
                               font-weight: 700;
-                              font-size: $font-size + 14;
+                              font-size: $font-size + 22;
                               font-family: "Poppins", sans-serif;
                     }
           }
@@ -260,12 +274,12 @@
                                                   color: $white;
                                                   font-family: "Raleway",
                                                             sans-serif;
-                                                  font-size: $font-size - 2;
+
                                                   font-weight: 500;
                                         }
                                         span {
                                                   color: $deep-black;
-                                                  font-size: $font-size;
+                                                  font-size: $font-size + 4;
                                                   font-weight: 700;
                                                   font-family: "Open Sans",
                                                             sans-serif;
@@ -275,11 +289,11 @@
                               .card-title {
                                         font-family: "Raleway", sans-serif;
                                         font-weight: 700;
-                                        font-size: $font-size + 3;
+                                        font-size: $font-size + 6;
                               }
                               //   card text
                               .card-text {
-                                        font-size: $font-size - 2;
+                                        font-size: $font-size;
                               }
                               //   course trainer
                               .course_trainer {
@@ -289,9 +303,16 @@
                                                   }
                                                   span {
                                                             font-weight: 600;
-                                                            font-size: $font-size -1;
+                                                            font-size: $font-size +
+                                                                      2;
                                                             font-family: "Raleway",
                                                                       sans-serif;
+                                                  }
+                                        }
+                                        .trainer_right_icon {
+                                                  span {
+                                                            font-size: $font-size +
+                                                                      4;
                                                   }
                                         }
                               }
@@ -308,6 +329,7 @@
                               font-weight: bold;
                               font-family: "Poppins", sans-serif;
                               position: relative;
+
                               &:after {
                                         content: "";
                                         left: 75px;
@@ -320,35 +342,36 @@
                     }
                     h2 {
                               font-weight: 700;
-                              font-size: $font-size + 14;
+                              font-size: $font-size + 22;
                               font-family: "Poppins", sans-serif;
                     }
           }
           //   card
           .card {
                     .card-body {
+                              padding: 20px 20px;
                               //   card title
                               .card-title {
                                         font-family: "Raleway", sans-serif;
                                         font-weight: 700;
-                                        font-size: $font-size + 3;
+                                        font-size: $font-size + 4;
                               }
                               .card-subtitle {
                                         font-family: "Raleway", sans-serif;
-                                        font-size: $font-size - 3;
+                                        font-size: $font-size - 1;
                                         font-style: italic;
                                         margin-bottom: 10px;
                               }
                               //   card text
                               .card-text {
-                                        font-size: $font-size - 2;
+                                        font-size: $font-size;
                                         font-style: italic;
                               }
                               .social_link {
                                         ul {
                                                   li {
                                                             a {
-                                                                      color: #dadada;
+                                                                      color: #7e9486;
                                                                       transition: 0.4s;
                                                                       -webkit-transition: 0.4s;
                                                                       -moz-transition: 0.4s;
@@ -357,6 +380,10 @@
                                                                       &:hover {
                                                                                 color: $green;
                                                                       }
+                                                            }
+                                                            i {
+                                                                      font-size: $font-size +
+                                                                                4;
                                                             }
                                                   }
                                         }
@@ -373,11 +400,11 @@
           //   mentor left
           .mentor_left {
                     h3 {
-                              font-size: $font-size + 8;
+                              font-size: $font-size + 14;
                     }
                     p,
                     span {
-                              font-size: $font-size - 2;
+                              font-size: $font-size;
                               font-family: "Raleway", sans-serif;
                     }
                     span {
@@ -389,7 +416,7 @@
           .service,
           .newsletter {
                     h3 {
-                              font-size: $font-size + 1;
+                              font-size: $font-size + 2;
                               font-weight: 700;
                     }
                     ul {
@@ -401,7 +428,7 @@
                                                   color: $green;
                                         }
                                         a {
-                                                  font-size: $font-size - 2;
+                                                  font-size: $font-size;
                                                   color: #6c757d !important;
                                                   font-weight: normal;
                                                   transition: 0.4s;
@@ -422,7 +449,7 @@
                     position: relative;
 
                     p {
-                              font-size: $font-size - 2;
+                              font-size: $font-size;
                     }
                     input[type="text"] {
                               width: 100%;
@@ -432,7 +459,7 @@
                     }
                     input[type="text"],
                     input[type="submit"] {
-                              padding: 6px 10px;
+                              padding: 10px 10px;
                               border: none;
                     }
                     input[type="submit"] {
