@@ -1,4 +1,4 @@
-#footer_category_section, #trainer_section, #course_section, #feature_section, #choose_section, #about_section {
+#event_section, #footer_category_section, #trainer_section, #course_section, #feature_section, #choose_section, #about_section {
   padding: 50px 0;
 }
 
@@ -451,5 +451,97 @@ p {
 }
 
 /* End footer_category_section*/
+/* Footer Bottom */
+#footer_bottom_section {
+  padding: 25px 0;
+  background-color: #eef0ef;
+}
+#footer_bottom_section .copyright p {
+  margin: 0;
+}
+#footer_bottom_section .copyright p:last-child {
+  font-size: 13px;
+}
+#footer_bottom_section .copyright p:last-child a {
+  color: #5fcf80;
+  font-weight: 300;
+}
+#footer_bottom_section .footer_social_link ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 3.3;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background-color: #5fcf80;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#footer_bottom_section .footer_social_link ul li a:hover {
+  background-color: #3ac162;
+}
+#footer_bottom_section .footer_social_link ul li a i {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+/* end Footer Bottom */
+/* ScrollToTop */
+.scrolltotop {
+  position: fixed;
+  bottom: 10px;
+  right: 8px;
+  background-color: #5fcf80;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  cursor: pointer;
+  font-size: 26px;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* page headline */
+#page_headline {
+  background-color: #5fcf80;
+}
+#page_headline h3 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+/* end page headline */
+/* Event Section */
+#event_section .card-group .card {
+  overflow: hidden;
+}
+#event_section .card-group .card .card-img-top {
+  overflow: hidden;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#event_section .card-group .card .card-img-top:hover {
+  transform: scale(1.2) !important;
+  -webkit-transform: scale(1.2) !important;
+  -moz-transform: scale(1.2) !important;
+  -ms-transform: scale(1.2) !important;
+  -o-transform: scale(1.2) !important;
+}
+
+/* End Event Section */
 
 /*# sourceMappingURL=style.css.map */

@@ -484,3 +484,119 @@
           }
 }
 /* End footer_category_section*/
+/* Footer Bottom */
+#footer_bottom_section {
+          padding: 25px 0;
+          background-color: #eef0ef;
+          .copyright {
+                    p {
+                              margin: 0;
+                    }
+                    p:last-child {
+                              font-size: $font-size - 1;
+                              a {
+                                        color: $green;
+                                        font-weight: 300;
+                              }
+                    }
+          }
+          //   footer social link
+          .footer_social_link {
+                    ul {
+                              li {
+                                        a {
+                                                  display: inline-block;
+                                                  width: 40px;
+                                                  height: 40px;
+                                                  text-align: center;
+                                                  line-height: 3.3;
+                                                  border-radius: 100%;
+                                                  -webkit-border-radius: 100%;
+                                                  -moz-border-radius: 100%;
+                                                  -ms-border-radius: 100%;
+                                                  -o-border-radius: 100%;
+                                                  background-color: $green;
+                                                  transition: 0.4s;
+                                                  -webkit-transition: 0.4s;
+                                                  -moz-transition: 0.4s;
+                                                  -ms-transition: 0.4s;
+                                                  -o-transition: 0.4s;
+                                                  &:hover {
+                                                            background-color: #3ac162;
+                                                  }
+                                                  i {
+                                                            font-size: $font-size +
+                                                                      4;
+                                                            color: $white;
+                                                  }
+                                        }
+                              }
+                    }
+          }
+}
+/* end Footer Bottom */
+/* ScrollToTop */
+
+.scrolltotop {
+          position: fixed;
+          bottom: 10px;
+          right: 8px;
+          background-color: $green;
+          //   //   padding: 12px;
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          -webkit-border-radius: 100%;
+          -moz-border-radius: 100%;
+          -ms-border-radius: 100%;
+          -o-border-radius: 100%;
+          cursor: pointer;
+          font-size: $font-size + 12;
+          color: $white;
+          text-align: center;
+}
+
+/* page headline */
+#page_headline {
+          background-color: $green;
+          h3 {
+                    font-size: $font-size + 16px;
+                    color: $white;
+          }
+}
+/* end page headline */
+/* Event Section */
+#event_section {
+          @extend %section-padding;
+          .card-group {
+                    .card {
+                              overflow: hidden;
+                              .card-img-top {
+                                        overflow: hidden;
+                                        transition: 0.4s;
+                                        -webkit-transition: 0.4s;
+                                        -moz-transition: 0.4s;
+                                        -ms-transition: 0.4s;
+                                        -o-transition: 0.4s;
+                                        &:hover {
+                                                  transform: scale(
+                                                            1.2
+                                                  ) !important;
+                                                  -webkit-transform: scale(
+                                                            1.2
+                                                  ) !important;
+                                                  -moz-transform: scale(
+                                                            1.2
+                                                  ) !important;
+                                                  -ms-transform: scale(
+                                                            1.2
+                                                  ) !important;
+                                                  -o-transform: scale(
+                                                            1.2
+                                                  ) !important;
+                                        }
+                              }
+                    }
+          }
+}
+/* End Event Section */
