@@ -1,4 +1,4 @@
-#event_section, #footer_category_section, #trainer_section, #course_section, #feature_section, #choose_section, #about_section {
+#pricing_section, #event_section, #footer_category_section, #trainer_section, #course_section, #feature_section, #choose_section, #about_section {
   padding: 50px 0;
 }
 
@@ -527,22 +527,134 @@ p {
 #event_section .card-group .card {
   overflow: hidden;
 }
-#event_section .card-group .card .card-img-top {
-  overflow: hidden;
+#event_section .card-group .card:hover .card-body {
+  border-top-color: #5fcf80;
   transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
 }
-#event_section .card-group .card .card-img-top:hover {
+#event_section .card-group .card:hover .card-body .card-title a {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  color: #5fcf80;
+}
+#event_section .card-group .card .card-img {
+  overflow: hidden;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+#event_section .card-group .card .card-img .card-img-top {
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+#event_section .card-group .card .card-img .card-img-top:hover {
   transform: scale(1.2) !important;
   -webkit-transform: scale(1.2) !important;
   -moz-transform: scale(1.2) !important;
   -ms-transform: scale(1.2) !important;
   -o-transform: scale(1.2) !important;
 }
+#event_section .card-group .card .card-body {
+  width: 90%;
+  margin-top: -60px !important;
+  z-index: 10;
+  border-top: 4px solid transparent;
+}
+#event_section .card-group .card .card-body .card-title a {
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  color: #37423b;
+  font-weight: 600;
+}
+#event_section .card-group .card .card-body .card-subtitle {
+  font-style: italic;
+  font-size: 16px;
+  font-weight: normal;
+}
+#event_section .card-group .card .card-body .card-text {
+  font-size: 16px;
+}
 
 /* End Event Section */
+/* pricing_section */
+#pricing_section .card {
+  position: relative;
+  overflow: hidden;
+}
+#pricing_section .card .advance {
+  background-color: #5fcf80;
+  padding: 5px 80px;
+  color: #ffffff;
+  transform: rotate(45deg) translateX(20px);
+  -webkit-transform: rotate(45deg) translateX(20px);
+  -moz-transform: rotate(45deg) translateX(20px);
+  -ms-transform: rotate(45deg) translateX(20px);
+  -o-transform: rotate(45deg) translateX(20px);
+  position: absolute;
+  right: -60px;
+  font-size: 16px;
+}
+#pricing_section .card .card-header {
+  padding: 18px 0;
+  border: none;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: #37423b;
+}
+#pricing_section .card .card-header:nth-child(2) .card-header {
+  background-color: #5fcf80 !important;
+  color: #ffffff;
+}
+#pricing_section .card .card-body h4 {
+  color: #5fcf80;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  position: relative;
+}
+#pricing_section .card .card-body h4 sup {
+  font-size: 20px;
+  position: absolute;
+  top: 25px;
+  left: 45px;
+}
+#pricing_section .card .card-body h4 span {
+  font-size: 16px;
+  color: #bababa;
+  font-weight: normal;
+}
+#pricing_section .card .card-body ul li {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #37423b;
+}
+#pricing_section .card .card-footer {
+  border: none;
+  padding: 18px 0;
+}
+#pricing_section .card .card-footer .rounded-pill {
+  background-color: #5fcf80;
+  padding: 0.4rem 2rem !important;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+#pricing_section .card .card-footer .rounded-pill:hover {
+  background-color: #3ac162 !important;
+}
+
+/* End pricing_section */
 
 /*# sourceMappingURL=style.css.map */
